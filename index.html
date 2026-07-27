@@ -10,157 +10,168 @@
         body { font-family: 'Inter', sans-serif; }
         .bg-black-true { background-color: #050505; }
         .accent-border { border-color: #333; }
+        .bg-cross {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%23ffffff'%3E%3Cpath d='M45 10 h10 v30 h30 v10 h-30 v40 h-10 v-40 h-30 v-10 h30 z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center top 10%;
+            background-size: 500px;
+        }
     </style>
 </head>
-<body class="bg-black-true text-gray-300 antialiased selection:bg-gray-100 selection:text-black">
+<body class="bg-black-true text-gray-300 antialiased selection:bg-gray-100 selection:text-black relative">
 
-    <!-- HERO SECTION -->
-    <header class="relative flex flex-col items-center justify-center min-h-screen px-6 text-center border-b accent-border">
-        <img src="logo" alt="Tha Foundry Logo" class="w-64 md:w-80 mb-8 invert">
-        <h1 class="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter mb-4">
-            FORGE. FLUSH. FOCUS.
-        </h1>
-        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-10 font-light">
-            A private high-performance sanctuary for working professionals and elite athletes.
-        </p>
-        <a href="#invite" class="px-8 py-4 bg-white text-black font-bold uppercase tracking-widest hover:bg-gray-300 transition-colors">
-            Request an Invite
-        </a>
-        <p class="mt-8 text-sm tracking-widest text-gray-500 uppercase">Lone Oak, TX &nbsp;|&nbsp; By Appointment Only</p>
-    </header>
+    <!-- SUBTLE BACKGROUND CROSS SILHOUETTE -->
+    <div class="fixed inset-0 bg-cross opacity-[0.03] pointer-events-none z-0"></div>
 
-    <!-- THE METHODOLOGY (3 PILLARS) -->
-    <section class="py-24 px-6 max-w-7xl mx-auto border-b accent-border">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-            <div>
-                <h3 class="text-2xl font-bold text-white mb-4 uppercase tracking-wide">1. Sweat</h3>
-                <p class="text-gray-400">The Forge & Crucible. High-load physical work on our 2-acre terrain designed to strip the physical ego and test raw capacity.</p>
-            </div>
-            <div>
-                <h3 class="text-2xl font-bold text-white mb-4 uppercase tracking-wide">2. Recover</h3>
-                <p class="text-gray-400">Physiological down-regulation. Hot tub hydrotherapy and deliberate breathwork to shift the central nervous system from fight-or-flight to recovery.</p>
-            </div>
-            <div>
-                <h3 class="text-2xl font-bold text-white mb-4 uppercase tracking-wide">3. Think</h3>
-                <p class="text-gray-400">The 384 sq ft Mindset Studio. Step in with a clear mind and flooded endorphins for deep-dive strategic coaching and cognitive alignment.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CORE OFFERINGS & SPECIALTY LABS -->
-    <section class="py-24 px-6 max-w-7xl mx-auto border-b accent-border">
-        <h2 class="text-3xl md:text-5xl font-black text-white uppercase mb-16 text-center">The Offerings</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
-            <div>
-                <h3 class="text-2xl font-bold text-white mb-4 uppercase border-l-4 border-white pl-4">The Executive Reset</h3>
-                <p class="text-gray-400 mb-4">A 3-to-4 hour intensive retreat for executives, business owners, and leadership teams. We use targeted physical stress to break through mental blocks, followed by deep-dive strategic coaching to cure burnout and build execution blueprints.</p>
-            </div>
-            <div>
-                <h3 class="text-2xl font-bold text-white mb-4 uppercase border-l-4 border-white pl-4">Athlete Synthesis</h3>
-                <p class="text-gray-400 mb-4">Comprehensive physical capacity combined with sports psychology and mental toughness training for high school, collegiate, and private athletes.</p>
-            </div>
-        </div>
-
-        <h3 class="text-xl md:text-2xl font-bold text-white uppercase mb-8 text-center tracking-widest">High-Focal Specialty Labs</h3>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-sm">
-            <div class="p-6 border accent-border bg-[#0a0a0a]">
-                <h4 class="font-bold text-white uppercase mb-2">Cross Country Engine</h4>
-                <p class="text-gray-400">Repeating outdoor distance loops, cadence work, and heat acclimation training.</p>
-            </div>
-            <div class="p-6 border accent-border bg-[#0a0a0a]">
-                <h4 class="font-bold text-white uppercase mb-2">Throwers Power</h4>
-                <p class="text-gray-400">Rotational power, hip-crack mechanics, and ground-force production for Shot/Discus.</p>
-            </div>
-            <div class="p-6 border accent-border bg-[#0a0a0a]">
-                <h4 class="font-bold text-white uppercase mb-2">Contact Mechanics</h4>
-                <p class="text-gray-400">High-velocity, track-tackling mechanics borrowed from rugby for football safety & power.</p>
-            </div>
-            <div class="p-6 border accent-border bg-[#0a0a0a]">
-                <h4 class="font-bold text-white uppercase mb-2">Stripping the Guard</h4>
-                <p class="text-gray-400">High-intensity cognitive coaching using physical stress to break performance anxiety.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SATURDAY SPIN 6 -->
-    <section class="py-24 px-6 bg-[#0a0a0a] border-b accent-border">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl md:text-5xl font-black text-white uppercase mb-6">The Saturday Spin 6</h2>
-            <p class="text-xl text-gray-300 font-bold mb-4 uppercase tracking-widest">Limit: 6 Clients Max</p>
-            <p class="text-gray-400 max-w-2xl mx-auto">
-                An exclusive, high-energy early morning cycling experience. Designed to build raw cardiovascular capacity, flush lactic acid, and set the tone for the weekend. 45 minutes of intense rhythm and power, followed by optional outdoor recovery.
+    <div class="relative z-10">
+        <!-- HERO SECTION -->
+        <header class="relative flex flex-col items-center justify-center min-h-screen px-6 text-center border-b accent-border">
+            <img src="logo" alt="Tha Foundry Logo" class="w-64 md:w-80 mb-8 invert">
+            <h1 class="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter mb-4">
+                Forge. Flush. Focus.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-10 font-light">
+                A private high-performance sanctuary for working professionals and elite athletes.
             </p>
-        </div>
-    </section>
+            <a href="#invite" class="px-8 py-4 bg-white text-black font-bold uppercase tracking-widest hover:bg-gray-300 transition-colors">
+                Request an Invite
+            </a>
+            <p class="mt-8 text-sm tracking-widest text-gray-500 uppercase">Lone Oak, TX &nbsp;|&nbsp; By Appointment Only</p>
+        </header>
 
-    <!-- THE FOUNDER -->
-    <section class="py-24 px-6 max-w-4xl mx-auto border-b accent-border">
-        <h2 class="text-3xl font-black text-white uppercase mb-8">The Founder</h2>
-        <h3 class="text-xl text-white font-bold mb-2">Christofer De Hart</h3>
-        <p class="text-sm text-gray-500 uppercase tracking-widest mb-6">Strategic Performance Director & Lead Coach</p>
-        <blockquote class="text-xl italic text-gray-300 border-l-4 border-gray-600 pl-4 mb-6">
-            "You cannot fix in the boardroom what you are unequipped to handle under physical stress."
-        </blockquote>
-        <p class="text-gray-400 mb-4">
-            Christofer’s background bridges high-stakes corporate enterprise with elite human performance. A former Global Account Executive managing multi-million dollar corporate portfolios and an independent business owner, Christofer understands executive burnout, strategic pressure, and P&L stress firsthand.
-        </p>
-        <p class="text-gray-400">
-            As a Head S&C Coach, USA Rugby Level 3 Coach, ISSA Recovery Specialist, and Chaplain Ministry scholar, Christofer built <strong>Tha Foundry</strong> on a simple truth: <em>when you strip away physical ego, mental clarity follows.</em>
-        </p>
-    </section>
-
-    <!-- INTAKE FORM (FORMSPREE) -->
-    <section id="invite" class="py-24 px-6 max-w-2xl mx-auto">
-        <h2 class="text-3xl font-black text-white uppercase text-center mb-4">Request An Invite</h2>
-        <p class="text-center text-gray-400 mb-12">Submit your details below. We will review your inquiry and contact you to schedule your session.</p>
-        
-        <form action="https://formspree.io/f/xnjelepr" method="POST" class="space-y-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- THE METHODOLOGY (3 PILLARS) -->
+        <section class="py-24 px-6 max-w-7xl mx-auto border-b accent-border">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
                 <div>
-                    <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Full Name</label>
-                    <input type="text" name="name" required class="w-full bg-black-true border accent-border text-white px-4 py-3 focus:outline-none focus:border-white transition-colors">
+                    <h3 class="text-2xl font-bold text-white mb-4 uppercase tracking-wide">1. Forge</h3>
+                    <p class="text-gray-400">High-performance mechanics and strength rebuilding on our 2-acre terrain. Re-engineering sprint mechanics, rotational power, and physical capacity under load.</p>
                 </div>
                 <div>
-                    <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Phone Number</label>
-                    <input type="tel" name="phone" required class="w-full bg-black-true border accent-border text-white px-4 py-3 focus:outline-none focus:border-white transition-colors">
+                    <h3 class="text-2xl font-bold text-white mb-4 uppercase tracking-wide">2. Flush</h3>
+                    <p class="text-gray-400">Neuromuscular and physical recovery. Combining targeted EMS (Electrical Muscle Stimulation) technology with hydrotherapy to flush metabolic waste and accelerate adaptation.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4 uppercase tracking-wide">3. Focus</h3>
+                    <p class="text-gray-400">Deep cognitive alignment in our Mindset Studio. With elevated endorphins and zero physical ego remaining, we refine strategy, mindset, and execution.</p>
                 </div>
             </div>
+        </section>
+
+        <!-- CORE OFFERINGS & SPECIALTY LABS -->
+        <section class="py-24 px-6 max-w-7xl mx-auto border-b accent-border">
+            <h2 class="text-3xl md:text-5xl font-black text-white uppercase mb-16 text-center">The Offerings</h2>
             
-            <div>
-                <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Email Address</label>
-                <input type="email" name="email" required class="w-full bg-black-true border accent-border text-white px-4 py-3 focus:outline-none focus:border-white transition-colors">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4 uppercase border-l-4 border-white pl-4">The Executive Reset</h3>
+                    <p class="text-gray-400 mb-4">A 3-to-4 hour intensive retreat for executives and business leaders. We utilize controlled physical stress to strip away fatigue and mental blocks, followed by hydro/EMS flushing and strategic executive coaching.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4 uppercase border-l-4 border-white pl-4">High-Performance Mechanics</h3>
+                    <p class="text-gray-400 mb-4">Elite athletic reconstruction for track & field competitors and high-caliber multi-sport athletes. Proven bio-individual progression plans designed to build explosive acceleration, biomechanical power, and competitive courage under fatigue.</p>
+                </div>
             </div>
 
-            <div>
-                <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Program of Interest</label>
-                <select name="program" class="w-full bg-black-true border accent-border text-gray-300 px-4 py-3 focus:outline-none focus:border-white transition-colors appearance-none">
-                    <option value="Executive Reset">The Executive Reset</option>
-                    <option value="Athlete Synthesis">Athlete Synthesis</option>
-                    <option value="Saturday Spin 6">Saturday Spin 6</option>
-                    <option value="Specialty Lab">Specialty Training Lab</option>
-                    <option value="Other">Other</option>
-                </select>
+            <h3 class="text-xl md:text-2xl font-bold text-white uppercase mb-8 text-center tracking-widest">Specialty Performance Labs</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-sm">
+                <div class="p-6 border accent-border bg-[#0a0a0a]">
+                    <h4 class="font-bold text-white uppercase mb-2">Track & Speed Mechanics</h4>
+                    <p class="text-gray-400">State-proven acceleration mechanics, sprint geometry, and bio-individual speed programming.</p>
+                </div>
+                <div class="p-6 border accent-border bg-[#0a0a0a]">
+                    <h4 class="font-bold text-white uppercase mb-2">Rotational Power Lab</h4>
+                    <p class="text-gray-400">Hip-crack mechanics and ground-force production for Shot, Discus, and rotational athletes.</p>
+                </div>
+                <div class="p-6 border accent-border bg-[#0a0a0a]">
+                    <h4 class="font-bold text-white uppercase mb-2">Neuromuscular EMS</h4>
+                    <p class="text-gray-400">Compex muscle activation, recruitment mapping, and rapid recovery flushing.</p>
+                </div>
+                <div class="p-6 border accent-border bg-[#0a0a0a]">
+                    <h4 class="font-bold text-white uppercase mb-2">Contact Mechanics</h4>
+                    <p class="text-gray-400">USA Rugby-backed track-tackling, power angles, and collision safety for field sports.</p>
+                </div>
             </div>
+        </section>
 
-            <div>
-                <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Briefly Describe Your Goals</label>
-                <textarea name="message" rows="4" required class="w-full bg-black-true border accent-border text-white px-4 py-3 focus:outline-none focus:border-white transition-colors"></textarea>
+        <!-- SATURDAY SPIN 6 -->
+        <section class="py-24 px-6 bg-[#0a0a0a] border-b accent-border">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-5xl font-black text-white uppercase mb-6">The Saturday Spin 6</h2>
+                <p class="text-xl text-gray-300 font-bold mb-4 uppercase tracking-widest">Limit: 6 Clients Max</p>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    An exclusive, high-energy early morning indoor cycling session. Built for raw cardiovascular conditioning, lactic acid flushing, and resetting high-capacity athletes and executives for the week ahead.
+                </p>
             </div>
+        </section>
 
-            <button type="submit" class="w-full bg-white text-black font-bold uppercase tracking-widest py-4 hover:bg-gray-300 transition-colors">
-                Submit Request
-            </button>
-        </form>
-    </section>
+        <!-- THE FOUNDER -->
+        <section class="py-24 px-6 max-w-4xl mx-auto border-b accent-border">
+            <h2 class="text-3xl font-black text-white uppercase mb-8">The Head Coach</h2>
+            <h3 class="text-xl text-white font-bold mb-2">Christofer De Hart</h3>
+            <p class="text-sm text-gray-500 uppercase tracking-widest mb-6">High-Performance Mechanics Coach & Strategic Director</p>
+            <blockquote class="text-xl italic text-gray-300 border-l-4 border-gray-600 pl-4 mb-6">
+                "You cannot fix in the boardroom or on the track what you are unequipped to handle under physical stress."
+            </blockquote>
+            <p class="text-gray-400 mb-4">
+                Christofer’s methodology combines elite athletic biomechanics with enterprise leadership principles. As a Head Track & Field Coach, he led a 5-athlete squad to an 11th-place finish out of 33 state teams—producing 6 state medalists through custom bio-individual progression plans.
+            </p>
+            <p class="text-gray-400">
+                Holding USA Rugby Level 3 credentials alongside ISSA Strength & Conditioning, Corrective Exercise, and Recovery certifications—coupled with a background in Pastoral Counseling and corporate risk management—Christofer built <strong>Tha Foundry</strong> to rebuild physical power and lock in mental clarity.
+            </p>
+        </section>
 
-    <!-- FOOTER -->
-    <footer class="py-12 text-center border-t accent-border px-6">
-        <p class="text-white font-bold tracking-widest uppercase mb-2">Tha Foundry</p>
-        <p class="text-sm text-gray-500 tracking-widest uppercase mb-6">Lone Oak, TX &nbsp;|&nbsp; By Appointment Only</p>
-        <a href="mailto:cfittoit@gmail.com" class="text-gray-400 hover:text-white transition-colors text-sm tracking-wider">cfittoit@gmail.com</a>
-        <p class="mt-8 text-xs text-gray-700">&copy; 2026 Tha Foundry. All Rights Reserved.</p>
-    </footer>
+        <!-- INTAKE FORM -->
+        <section id="invite" class="py-24 px-6 max-w-2xl mx-auto">
+            <h2 class="text-3xl font-black text-white uppercase text-center mb-4">Request An Invite</h2>
+            <p class="text-center text-gray-400 mb-12">Submit your details below. We will review your inquiry and contact you to schedule your session.</p>
+            
+            <form action="https://formspree.io/f/xnjelepr" method="POST" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Full Name</label>
+                        <input type="text" name="name" required class="w-full bg-black-true border accent-border text-white px-4 py-3 focus:outline-none focus:border-white transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Phone Number</label>
+                        <input type="text" name="phone" required class="w-full bg-black-true border accent-border text-white px-4 py-3 focus:outline-none focus:border-white transition-colors">
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Email Address</label>
+                    <input type="email" name="email" required class="w-full bg-black-true border accent-border text-white px-4 py-3 focus:outline-none focus:border-white transition-colors">
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Program of Interest</label>
+                    <select name="program" class="w-full bg-black-true border accent-border text-gray-300 px-4 py-3 focus:outline-none focus:border-white transition-colors appearance-none">
+                        <option value="Executive Reset">The Executive Reset</option>
+                        <option value="High-Performance Mechanics">High-Performance Mechanics (Athletes)</option>
+                        <option value="Saturday Spin 6">Saturday Spin 6</option>
+                        <option value="Specialty Lab">Specialty Performance Lab</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Briefly Describe Your Goals</label>
+                    <textarea name="comments" rows="4" required class="w-full bg-black-true border accent-border text-white px-4 py-3 focus:outline-none focus:border-white transition-colors"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-white text-black font-bold uppercase tracking-widest py-4 hover:bg-gray-300 transition-colors">
+                    Submit Request
+                </button>
+            </form>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="py-12 text-center border-t accent-border px-6">
+            <p class="text-white font-bold tracking-widest uppercase mb-2">Tha Foundry</p>
+            <p class="text-sm text-gray-500 tracking-widest uppercase mb-6">Lone Oak, TX &nbsp;|&nbsp; By Appointment Only</p>
+            <a href="mailto:cfittoit@gmail.com" class="text-gray-400 hover:text-white transition-colors text-sm tracking-wider">cfittoit@gmail.com</a>
+            <p class="mt-8 text-xs text-gray-700">&copy; 2026 Tha Foundry. All Rights Reserved.</p>
+        </footer>
+    </div>
 
 </body>
 </html>
